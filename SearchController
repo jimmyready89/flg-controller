@@ -1,0 +1,20 @@
+<?php
+namespace App\Http\Controllers\flg;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class SearchController extends Controller{
+    public function __construct(){
+    }
+
+    public function Search(Request $SeatMapSearchRequest){
+        $Return = json_decode('{
+            "Data": {},
+            "Message" : [],
+            "Status" : 1
+        }');
+
+        return response()->json($Return);
+    }
+}
